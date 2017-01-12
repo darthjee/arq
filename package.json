@@ -1,0 +1,9 @@
+{
+  "name" : "arq",
+  "description" : "Machine power switcher",
+  "author" : "Fernando 'darthjee' Favini",
+  "version" : "0.1.0",
+  "dependencies" : {
+    "aws-sdk" : "2.7.21"
+  }
+}
