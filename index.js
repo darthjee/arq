@@ -4,4 +4,4 @@ var region = process.env.AWS_REGION,
 
 var machine = new Machine(instanceId, region);
 
-machine.checkStatus();
+machine.toggleState();
