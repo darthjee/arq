@@ -1,8 +1,7 @@
 var region = process.env.AWS_REGION,
-    EC2 = require('./lib/ec2');
+    instanceId = process.env.INSTANCE_ID,
+    Machine = require('./lib/machine');
 
-var ec2 = new EC2({
-  region: region
-});
+var machine = new Machine(instanceId, region);
 
-ec2.checkStatus();
+machine.checkStatus();
